@@ -1,0 +1,41 @@
+.container {
+    border: 2px solid black;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin: 2px;
+    padding: 3px;
+}
+
+.boxleft {
+    background-color: aqua;
+    border: 2px solid rebeccapurple;
+    width: 47%;
+    margin: 3px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxright {
+    background-color: yellow;
+    border: 2px solid red;
+    width: 47%;
+    margin: 3px;
+    padding: 2px;
+
+}
+img {
+    width: 170px;
+}
+
+p {
+    border: 2px solid green;
+
+}
+@media (max-width: 640) {
+    .container {
+        flex-direction: column;
+    }
+}
