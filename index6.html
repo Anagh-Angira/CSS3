@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .container {
+            border: 2px solid black;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .container {
+            position: relative;
+            height: 8000px;
+            background-color: aqua;
+        }
+
+        .image4 {
+            position: fixed;
+        }
+
+        .image3 {
+            position: sticky;
+            top:  200px;
+        }
+        .box {
+            background-color: aquamarine;
+            height: 5000px;
+        }
+
+        /*Relative Position Property*/
+        /*.image2 {
+            /* position: relative;
+            top: 100px;
+            left: 200px; 
+            position: absolute;
+            top: 200px;
+        }  */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="image1" src="pic1.jpg" alt="poster1" width="300px" height="300px">
+        <img class="image2" src="pic2.jpg" alt="poster2" width="300px" height="300px">
+        <img class="image3" src="pic3.jpg" alt="poster3" width="300px" height="300px">
+        <img class="image4" src="pic4.jpg" alt="poster4" width="300px" height="300px">
+
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
