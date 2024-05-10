@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            height: 900px;
+            flex-direction: row;
+            /*
+            justify-content: center;
+            justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: flex-start;
+            */
+
+            /* 
+            flex-direction: column;
+           flex-direction: row-reverse;
+           flex-direction: column-reverse;
+           flex-wrap: wrap; 
+           flex-wrap: wrap-reverse; 
+
+
+            height: 1900px;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: flex-end;  
+
+            align-items: center;
+            align-items: start;
+            align-items: end;
+            
+
+            justify-content: center;
+            align-items: center;
+            
+            flex-wrap: wrap; */
+            justify-content: start;
+            align-items: start;
+            align-content: start;
+            align-content: end;
+            align-content: center;
+
+        }
+
+        .box {
+            /*
+            height: 200px;
+            width: 200px;
+            */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1 {
+            background-color: aqua;
+            order: 500;
+            /*flex-grow: 5;*/
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end;
+
+        }
+
+        #box2 {
+            background-color: rgb(192, 112, 7);
+            /*flex-grow: 1;*/
+
+        }
+
+        #box3 {
+            background-color: blue;
+            /*flex-grow: 1;*/
+        }
+
+        #box4 {
+            background-color: blueviolet;
+            order: -1;
+            /*flex-grow: 1;*/
+            /* flex-shrink: 4;
+            flex-basis: 400px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Boxx-1</div>
+        <div class="box" id="box2">Boxx-2</div>
+        <div class="box" id="box3">Boxx-3</div>
+        <div class="box" id="box4">Boxx-4</div>
+    </div>
+</body>
+
+</html>
