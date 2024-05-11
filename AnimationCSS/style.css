@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    border: 5px solid black;
+}
+
+.box {
+    width: 250px;
+    height: 80px;
+    background-color: blue;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    /* animation-name: rightMovement; */
+    /* animation-duration: 5s;
+    animation-iteration-count: 2;  
+    animation-delay: 2s; */
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: cubic-bezier(0.1, 0.2, 1.0, 0.1); */
+    /* animation-direction: alternate;
+    animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards;
+    animation-fill-mode: backwards; */
+
+    animation: 5s linear is infinite alternate none running rightMovement;
+
+}
+
+@keyframes rightMovement {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 0;
+        left: 1200px;
+    }
+}
+#circle {
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    border: 3px solid yellow;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    top: 130px;
+    left: 675px;
+
+}
+
+#box2 {
+    width: 250px;
+    height: 80px;
+    background-color: blue;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    animation: 5s ease-in is infinite alternate none running leftMovement;
+
+}
+@keyframes leftMovement {
+    from {
+        top: 650px;
+        left: 1350px;
+    }
+
+    to {
+        top: 650px;
+        left: 0;
+    }
+}
